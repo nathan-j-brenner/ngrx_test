@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+import {User} from '../shared/models/user.model';
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -7,9 +9,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  user: string = 'Nate';
+  user: User = {
+    name: 'Nate'
+  }
 
-  message: string = `Welcome ${this.user}`;
+  message: string = `Welcome ${this.user.name}`;
 
   constructor() { }
 
