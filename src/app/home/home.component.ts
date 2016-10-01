@@ -7,6 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
+  user: string = 'Nate';
+
+  message: string = `Welcome ${this.user}`;
+
   constructor() { }
 
   ngOnInit() {
