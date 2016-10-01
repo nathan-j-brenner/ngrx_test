@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+import {User} from '../shared/models/user.model';
+
 @Component({
   selector: 'app-register',
   templateUrl: './register.component.html',
@@ -7,7 +9,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RegisterComponent implements OnInit {
 
-  constructor() { }
+  user: User;
+
+  onSubmit(): void {
+    console.log(this.user);
+    this.user = {
+      name: ''
+    }
+  }
+
+  constructor() { 
+    this.user = {
+      name: ''
+    }
+  }
 
   ngOnInit() {
   }
