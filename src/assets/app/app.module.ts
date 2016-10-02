@@ -6,14 +6,14 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import {HomeComponent} from './home/home.component';
 import {RegisterComponent} from './register/register.component';
-import {UserListComponent} from './user-list/user-list.component';
+import {UsersListComponent} from './users-list/users-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     RegisterComponent,
-    UserListComponent
+    UsersListComponent
   ],
   imports: [
     BrowserModule,

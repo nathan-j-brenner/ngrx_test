@@ -9,6 +9,7 @@ import {User} from '../shared/models/user.model';
 })
 export class HomeComponent implements OnInit {
   title: string = 'HomeComponent';
+
   user: User = {
     name: 'Nate'
   }

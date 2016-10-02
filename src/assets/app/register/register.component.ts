@@ -8,7 +8,8 @@ import {User} from '../shared/models/user.model';
   styleUrls: ['./register.component.css']
 })
 export class RegisterComponent implements OnInit {
-  title: string = 'RegisterComponent';
+
+  title: string = "RegisterComponent";
   user: User;
 
   onSubmit(): void {

@@ -1,3 +1,5 @@
-<p>
-  {{message}}
-</p>
+<div>
+  <p>{{title}}: shows logged in user</p>
+  <p *ngIf="user">{{user.name}} is logged in</p>
+  <p *ngIf="!user">No user is logged in</p>
+</div>

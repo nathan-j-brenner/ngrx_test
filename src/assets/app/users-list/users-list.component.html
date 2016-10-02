@@ -1,0 +1,7 @@
+<div>
+  test
+  <p>{{title}}: shows all the users</p>
+  <ul *ngIf="users">
+    <li *ngFor="let user of users">{{user.name}}</li>
+  </ul>
+</div>

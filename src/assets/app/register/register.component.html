@@ -1,5 +1,5 @@
 <div>
-  <p>{{title}}: form to register new users, then log them in, as indicated by showing their data in the HomeComponent</p>
+  <p>{{title}}: form for registering a new user, then logging them in. On submit, should show their data in the HomeComponent</p>
   <form (ngSubmit)="onSubmit()">
     <label for="user">User Name</label>
     <input type="text" [(ngModel)]="user.name" name="name" id="name">
